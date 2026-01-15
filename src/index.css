@@ -1,21 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Modern Negra";
+    src: url("/fonts/Modern Negra Demo.ttf") format("truetype");
+}
 
 @theme {
     --color-yellow: #e7d393;
     --color-white-100: #efefef;
-    --font-sans: "Josefin Sans", sans-serif;
-    --font-modern-negra: "Josefin Sans", sans-serif;
+    --font-sans: "Mona Sans", sans-serif;
+    --font-modern-negra: "Modern Negra", sans-serif;
     --font-serif: "DM Serif Text", serif;
 }
 
 html,
 body {
     width: 100%;
-    background-color: #CDFC54;
-    color: black;
+    background-color: black;
+    color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -81,7 +85,7 @@ body {
     }
 
     .noisy {
-        @apply absolute inset-0 size-full bg-[url("/img/noise.png")];
+        @apply absolute inset-0 size-full bg-[url("/images/noise.png")];
     }
 
     #hero {
@@ -274,11 +278,11 @@ body {
         @apply relative w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient;
 
         #m-left-leaf {
-            @apply object-contain absolute -bottom-20 left-0 md:w-fit w-1/3;
+            @apply object-contain absolute bottom-0 left-0 md:w-fit w-1/3;
         }
 
         #m-right-leaf {
-            @apply object-contain absolute -top-40 right-0 md:w-fit w-1/4;
+            @apply object-contain absolute top-10 right-0 md:w-fit w-1/4;
         }
 
         .cocktail-tabs {
